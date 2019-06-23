@@ -1,0 +1,26 @@
+<div class="property-box z-depth-3">
+  <div class="property-image">
+    <img src="../../../assets/property.jpg" alt="">
+  </div>
+  <div class="property-details">
+    <a [routerLink]="['/dashboard',property._id]">
+      <h2>{{ property.house_no }}, {{ property.street | titlecase }}</h2>
+    </a>
+    <span>{{ property.street | titlecase }}, {{ property.city | titlecase }}</span>
+    <p class="price">$ {{ property.price }}</p>
+    <div class="row assets">
+      <div class="col s4 asset">
+        <span>BEDS</span>
+        <p>{{ property.beds }}</p>
+      </div>
+      <div class="col s4 asset">
+        <span>BATHS</span>
+        <p>{{ property.baths }}</p>
+      </div>
+      <div class="col s4 asset">
+        <span>SQ FT</span>
+        <p>{{ property.area }}</p>
+      </div>
+    </div>
+  </div>
+</div>

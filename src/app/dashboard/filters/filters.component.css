@@ -1,0 +1,32 @@
+.filters-block{
+    width:100%;
+    background-color:#e53935;
+    height:120px;   
+    padding:0 20px;
+    border-radius:0 0 5px 5px;
+}
+.filters-block .col{
+    /* border:1px solid black; */
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.filters-block label{
+    margin:5px 0;
+    font-size:14px;
+    letter-spacing:1px;
+    color:white;
+}
+.filters-block select{
+    border-radius: 0;
+    background-color:white;
+    height:50px;
+    font-weight:500;
+    color:#616161 ;
+}
+button{
+    border-radius:0;
+    height:50px;
+    margin-top:25px;
+}

@@ -1,0 +1,7 @@
+<div class="properties">
+    <div class="row">
+      <div class="col s12 m12 l6 xl4" *ngFor="let property of properties|filter:filterObject">
+        <app-property [property]="property"></app-property>
+      </div>
+    </div>
+</div>

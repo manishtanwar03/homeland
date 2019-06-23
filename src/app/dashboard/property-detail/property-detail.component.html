@@ -1,0 +1,65 @@
+<div class="back-button">
+    <a class="btn-floating btn-large waves-effect waves-light teal" routerLink='/dashboard'>
+      <i class="material-icons">navigate_before</i>
+    </a>
+</div>
+<div class="container z-depth-3">
+  <div class="property-image">
+    <img src="../../../assets/property.jpg" alt="">
+  </div>
+  <div class="details1">
+    <div class="row">
+      <div class="col s8 price">
+        <span>{{ property.house_no }}, {{ property.street | titlecase }}</span>
+        <p>$ {{ property.price }}</p>
+      </div>
+      <div class="col s4 assets">
+        <div class="row">
+          <div class="col s4 asset">
+            <span>BEDS</span>
+            <p>{{ property.beds }}</p>
+          </div>
+          <div class="col s4 asset">
+            <span>BATHS</span>
+            <p>{{ property.baths }}</p>
+          </div>
+          <div class="col s4 asset">
+            <span>SQ FT</span>
+            <p>{{ property.area }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="details2">
+    <div class="container">
+      <div class="row">
+        <div class="col s4">
+          <span>HOME TYPE</span>
+          <p>{{ property.home_type | titlecase }}</p>
+        </div>
+        <div class="col s4">
+            <span>OFFER TYPE</span>
+            <p>{{ property.offer_type | titlecase }}</p>
+        </div>
+        <div class="col s4">
+            <span>City</span>
+            <p>{{ property.city | titlecase }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="details3">
+    <h3 class="property-info">
+      More Info
+    </h3>
+    <p class="info">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda aperiam perferendis deleniti vitae asperiores accusamus tempora facilis sapiente, quas! Quos asperiores alias fugiat sunt tempora molestias quo deserunt similique sequi.
+
+        Nisi voluptatum error ipsum repudiandae, autem deleniti, velit dolorem enim quaerat rerum incidunt sed, qui ducimus! Tempora architecto non, eligendi vitae dolorem laudantium dolore blanditiis assumenda in eos hic unde.
+        
+        Voluptatum debitis cupiditate vero tempora error fugit aspernatur sint veniam laboriosam eaque eum, et hic odio quibusdam molestias corporis dicta! Beatae id magni, laudantium nulla iure ea sunt aliquam. A.
+    </p>
+  </div>
+</div>
+<app-footer></app-footer>

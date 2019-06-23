@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Asap&display=swap');
+.property-box{
+    width:350px;
+    margin:20px;
+    margin:25px auto;
+}
+.property-image{
+    height:250px;
+    width:100%;
+}
+.property-image img{
+    width:100%;
+    height:100%;
+}
+.property-details{
+    padding:10px 20px;
+}
+.property-details a:hover{
+    color:#e53935;
+    cursor: pointer;
+}
+.property-details h2{
+    margin:10px 0;
+    font-size:22px;
+    font-weight:600;
+}
+.property-details span{
+    font-size:14px;
+    color:grey;
+    font-weight:400;
+    border-bottom:50px;
+}
+.property-details .price{
+    font-size:18px;
+    font-weight:600;
+    color:#e53935;
+    /* padding:0 10px */
+}
+.property-details .assets p{
+    font-size:18px;
+    font-weight:bold;
+}
+.property-box .asset{
+    text-align: center;
+}
