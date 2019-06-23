@@ -1,6 +1,6 @@
 import { Component, OnInit,Output, EventEmitter } from '@angular/core';
 import { FormGroup,FormControl } from '@angular/forms';
-import { PropertyService } from '../property.service';
+import { PropertyService } from '../../services/property.service';
 
 @Component({
   selector: 'app-filters',

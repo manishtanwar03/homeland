@@ -1,7 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { Property } from '../property.model';
-import { PropertyService } from '../property.service';
-import { Button } from 'protractor';
+import { Property } from '../../services/property.model';
+import { PropertyService } from '../../services/property.service';
 
 @Component({
   selector: 'app-properties',

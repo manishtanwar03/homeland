@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Property } from './property.model';
 import { Subject } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +10,7 @@ export class PropertyService {
   properties:Property[];
   filterObject = new Subject();
   
-  constructor() {
+  constructor(private router:Router) {
      this.properties = [
       new Property(123,625,'s. berendo st','los angeles',2265500,'condo','sale',3,2,9000),
       new Property(532,871,'Crenshaw Blvd','new york',200500,'condo','rent',2,2,6000),
@@ -32,5 +33,8 @@ export class PropertyService {
          return entry;
        }
      }
+     this.router.navigate(['/404']);
+     
    }
+
 }

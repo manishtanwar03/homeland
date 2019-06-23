@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { PropertyService } from '../property.service';
-import { Property } from '../property.model';
+import { PropertyService } from '../../services/property.service';
+import { Property } from '../../services/property.model';
 
 @Component({
   selector: 'app-property-detail',
@@ -18,7 +18,7 @@ export class PropertyDetailComponent implements OnInit {
       (params) => {
           let id = params['id'];
           this.property = this.propertyService.getPropertyDetails(id);
-      }
+      } 
     );
   }
 

@@ -7,7 +7,7 @@ nav{
     background-color:#e53935;
 }
 .parallax {
-    background-image: url("../../assets/header.jpg");
+    background-image: url("../../../assets/header.jpg");
     min-height: 600px; 
     background-attachment: fixed;
     background-position: center;
