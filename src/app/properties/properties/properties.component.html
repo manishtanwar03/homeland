@@ -1,7 +1,12 @@
 <div class="properties">
-    <div class="row">
-      <div class="col s12 m12 l6 xl4" *ngFor="let property of properties|filter:filterObject">
-        <app-property [property]="property"></app-property>
+  <div class="row">
+    <div class="col s12 m12 l6 xl4">
+      <div class="add-property  z-depth-3">
+        <i class="large material-icons" [routerLink]="['/dashboard','edit']">add_circle_outline</i>
       </div>
     </div>
+    <div class="col s12 m12 l6 xl4" *ngFor="let property of properties|filter:filterObject">
+      <app-property [property]="property"></app-property>
+    </div>
+  </div>
 </div>

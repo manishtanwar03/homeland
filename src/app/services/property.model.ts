@@ -1,3 +1,10 @@
+function *getId(){
+    for(let id=129787;id<Infinity;id++){
+        yield id;
+    }
+}
+let id = getId();
+
 export class Property{
     public _id : number;
     public house_no : number;
@@ -8,12 +15,12 @@ export class Property{
     public offer_type:string;
     public beds:number;
     public baths:number;
-    public area:number; 
+    public area:number;
 
-    constructor(id:number,house_no:number,street:string,
+    constructor(house_no:number,street:string,
         city:string,price:number,home_type:string,offer_type:string,
         beds:number,baths:number,area:number){ 
-            this._id = id;
+            this._id = id.next().value;
             this.house_no = house_no;
             this.street = street;
             this.city = city;
@@ -34,4 +41,5 @@ export class Property{
     getCity(){
         return this.city;
     }
+
 }

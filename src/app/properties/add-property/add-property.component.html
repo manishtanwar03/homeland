@@ -1,0 +1,71 @@
+<div class="back-button">
+    <a class="btn-floating btn-large waves-effect waves-light teal" routerLink='/dashboard'>
+      <i class="material-icons">navigate_before</i>
+    </a>
+</div>
+<a class="waves-effect waves-light btn-large updateBtn" (click)="updateProperties()"><i class="material-icons right">check</i>Update</a>
+<div class="container z-depth-3">
+  <div class="property-image">
+    <img src="../../../assets/property.jpg" alt="">
+  </div>
+  <div class="details1">
+    <div class="row">
+      <div class="col s8 price">
+        <span contenteditable="true" [textContent]="property.house_no" (input)="property.house_no=$event.target.textContent">
+         </span>
+         <span>, </span>
+          <span contenteditable="true" [textContent]="property.street" (input)="property.street=$event.target.textContent"></span>
+          <p contenteditable="true" [textContent]="property.price" (input)="property.price=$event.target.textContent"></p>
+      </div>
+      <div class="col s4 assets">
+        <div class="row">
+          <div class="col s4 asset">
+            <span>BEDS</span>
+            <input type="number" [(ngModel)]="property.beds">
+          </div>
+          <div class="col s4 asset">
+            <span>BATHS</span>
+            <input type='number' [(ngModel)]="property.baths">
+          </div>
+          <div class="col s4 asset">
+            <span>SQ FT</span>
+            <input type='number' [(ngModel)]="property.area">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="details2">
+    <div class="container">
+      <div class="row">
+        <div class="col s4">
+          <span>HOME TYPE</span>
+          <p contenteditable="true" [textContent]="property.home_type" (input)="property.home_type=$event.target.textContent"></p>
+        </div>
+        <div class="col s4">
+            <span>OFFER TYPE</span>
+            <p contenteditable="true" [textContent]="property.offer_type" (input)="property.offer_type=$event.target.textContent"></p>
+        </div>
+        <div class="col s4">
+            <span>City</span>
+            <p contenteditable="true" [textContent]="property.city" (input)="property.city=$event.target.textContent"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="details3">
+    <h3 class="property-info">
+      More Info
+    </h3>
+    <p class="info">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda aperiam perferendis deleniti vitae asperiores accusamus tempora facilis sapiente, quas! Quos asperiores alias fugiat sunt tempora molestias quo deserunt similique sequi.
+
+        Nisi voluptatum error ipsum repudiandae, autem deleniti, velit dolorem enim quaerat rerum incidunt sed, qui ducimus! Tempora architecto non, eligendi vitae dolorem laudantium dolore blanditiis assumenda in eos hic unde.
+        
+        Voluptatum debitis cupiditate vero tempora error fugit aspernatur sint veniam laboriosam eaque eum, et hic odio quibusdam molestias corporis dicta! Beatae id magni, laudantium nulla iure ea sunt aliquam. A.
+    </p>
+  </div>
+</div>
+
+
+<app-footer></app-footer>

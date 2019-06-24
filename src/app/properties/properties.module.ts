@@ -6,6 +6,8 @@ import { CommonModule } from '@angular/common';
 import { PropertyPipe } from '../services/property.pipe';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
+import { AddPropertyComponent } from './add-property/add-property.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -13,16 +15,18 @@ import { SharedModule } from '../shared/shared.module';
         PropertiesComponent,
         PropertyComponent,
         PropertyDetailComponent,
-        PropertyPipe
+        PropertyPipe,
+        AddPropertyComponent
     ],
     imports:[
         CommonModule,
         RouterModule,
-        SharedModule
+        SharedModule,
+        FormsModule
     ],
     exports:[
         PropertiesComponent,
-        PropertyDetailComponent
+        PropertyDetailComponent,
     ]
 })
 

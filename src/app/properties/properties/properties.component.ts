@@ -10,7 +10,8 @@ import { PropertyService } from '../../services/property.service';
 export class PropertiesComponent implements OnInit {
   properties:Property[];
   filterObject:{}={'listing_type':'','city':'','offer_type':''};
-  constructor(public propertyService:PropertyService) { }
+  constructor(public propertyService:PropertyService) {
+  }
 
   ngOnInit() {
     this.properties = this.propertyService.getProperties();

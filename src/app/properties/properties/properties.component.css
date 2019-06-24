@@ -5,3 +5,24 @@
     display:flex;
     justify-content:space-evenly;
 }
+
+@import url('https://fonts.googleapis.com/css?family=Asap&display=swap');
+.add-property{
+    width:350px;
+    height:500px;
+    margin:20px;
+    margin:25px auto;
+    background-color:white;
+    color:rgba(128,12);
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+}
+.add-property i:hover{
+    color:#bdbdbd;
+}
+.add-property i{
+    color:#e0e0e0;
+    cursor: pointer;
+    outline:none;
+}
